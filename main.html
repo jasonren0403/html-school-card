@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的校园卡</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="Copyright Jason Ren,2019">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Jason Ren">
+    <meta name="keywords" content="前端,CSS,校园卡,北邮">
+    <meta name="description" content="前端CSS、HTML简单技术应用——设计校园卡">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page-content">
+    <h1 class="centered-text">我的校园卡</h1>
+    <div class="container">
+        <div id="front-items" class="col">
+            <h2 class="centered-text">正面</h2>
+            <div id="card-front" class="card-item light-border center-aligned" >
+                <div class="img-holder pic1x-holder div-inline light-border" id="stu-pic" style="float:right;margin-bottom:0.1em">
+                    <img src="img/photo1x.png" alt="sample-photo" >
+                </div>
+                <div class="info-holder div-inline" id="info" >
+                    <!-- todo: generate info dynamically  -->
+                    <p class="info"><span class="info-key">姓名</span>：<span class="info-value">xxx</span></p>
+                    <p class="info"><span class="info-key">类别</span>：<span class="info-value">本科生</span></p>
+                    <p class="info"><span class="info-key">学号</span>：<span class="info-value">2017xxxxxx</span></p>
+                    <p class="info" hidden><span class="info-key">教工号</span>：<span class="info-value">xxxxxxxxxx</span></p>
+                </div>
+                <div class="using-rule">
+                    <ol class="using-crit">
+                        <li>北邮校园卡仅限本人使用，请勿弯折、打孔以免损坏卡片。</li>
+                        <li>若卡遗失，请及时通过移动端应用、网站、自助服务机挂失。</li>
+                        <li>北邮通校园卡网站ecard.bupt.edu.cn；语音服务电话：62281616</li>
+                    </ol>
+                </div>
+                <div class="img-holder" id="bupt-logo">
+                    <img src="img/bupt.png" alt="bupt">
+                </div>
+            </div>
+        </div>
+        <div id="back-items" class="col">
+            <h2 class="centered-text">反面</h2>
+            <div id="card-back" class="card-item light-border center-aligned" >
+                <div class="img-holder" id="back-decoration">
+                    <img src="img/logo.png" alt="校徽" style="width:5em;margin-bottom:5em">
+                </div>
+                <div id="iden-box">
+                    <div id="identity-desc">
+                        学生卡
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="author">
+        <div id="author-info" class="button-like">作者信息（点击展开）</div>
+    </div>
+</div>
+<script src="js/author-click.js"></script>
+</body>
+</html>

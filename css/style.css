@@ -1,0 +1,255 @@
+@font-face {
+    font-family: Ink Free;
+    src: url("../font/en-Inkfree.ttf");
+}
+
+@font-face {
+    font-family: \u5e7c\u5706; /*幼圆\u5e7c\u5706*/
+    src: url("../font/cn-youyuan.ttf");
+}
+
+@font-face {
+    font-family: \u534e\u6587\u884c\u6977;  /*华文行楷\u534e\u6587\u884c\u6977*/
+    src: url("../font/cn-xingkai.ttf");
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.page-content{
+    margin: 1em;
+}
+
+.container {
+    column-count: 2;
+    column-gap: 20px;
+    column-rule: 1px dotted #3446f5;
+}
+
+#bupt-logo {
+    opacity: 0.8;
+}
+
+h1 {
+    letter-spacing: 0.1em;
+}
+
+.centered-text {
+    text-align: center;
+    font-weight: normal;
+}
+
+h2 {
+    margin: .25em 0;
+}
+
+ol li {
+    line-height: 1.3em;
+}
+
+.card-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    height: 40%;
+    max-height: 400px;
+    min-height: 300px;
+    width: 64%;
+    max-width: 640px;
+    min-width: 320px;
+    border-radius: 0.5em;
+    box-shadow: -2px 0 3px -1px green,
+    0 -2px 3px -1px blue,
+    0 2px 3px -1px red,
+    2px 0 3px -1px yellow;
+}
+
+.center-aligned {
+    margin: 0 auto;
+}
+
+/* The proportion of a card is 8(w):5(h) */
+@media screen and (min-width: 1200px) {
+    .using-rule {
+        top: 1em;
+    }
+
+    .card-item {
+        height: 40%;
+        width: 64%;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+    .card-item {
+        height: 30%;
+        width: 48%;
+    }
+
+}
+
+@media screen and(min-width: 360px) and (max-width: 640px) {
+    .card-item {
+        height: 20%;
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .card-item {
+        height: 10%;
+        width: 16%;
+    }
+
+    .using-rule {
+        padding: 0.1% !important;
+        font-size: 5%;
+        height: 50%;
+    }
+
+    .pic1x-holder {
+        width: 25% !important;
+        height: 50% !important;
+    }
+
+    .using-crit {
+        padding-left: 1.5em;
+    }
+
+    ol li {
+        font-size: 10%;
+        line-height: 1.1em;
+    }
+
+    .info-holder {
+        font-size: 5%;
+    }
+}
+
+#bupt-logo {
+    overflow: hidden;
+    width: 10em;
+    height: 3em;
+    float: right;
+    position: relative;
+    bottom: 2.5em
+}
+
+#iden-box {
+    background-image: linear-gradient(to bottom, rgba(72, 72, 72, 0.5), rgba(144, 144, 144, 0), rgba(72, 72, 72, 0.5));
+    position: relative;
+    bottom: -0.1em;
+}
+
+#identity-desc {
+    font-family: \u5e7c\u5706, sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1.4em;
+    text-shadow: 1px 0 1px ghostwhite;
+    line-height: 3.9em;
+    padding-left: 1.75em;
+    letter-spacing: 1em;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 1em 0;
+}
+
+.info-holder {
+    float: left;
+    padding: 0 1em;
+    margin: 0
+}
+
+.using-rule {
+    position: relative;
+    clear: both;
+    top: .75em;
+    padding-left: 1.5em;
+    background-color: rgba(177, 177, 177, 0.8);
+}
+
+.light-border {
+    border: solid 1px;
+}
+
+#card-back {
+    background: url("../img/info-front.png") no-repeat 60% 35%;
+    background-clip: border-box;
+    background-size: cover;
+}
+
+#card-front {
+    background: url("../img/info-bg.png") no-repeat 60% 35%;
+    background-size: cover;
+    background-clip: border-box;
+}
+
+.col {
+    padding-bottom: 2em;
+}
+
+
+.div-inline {
+    display: inline;
+}
+
+.pic1x-holder {
+    /*一寸照片的尺寸为2.5cm x 3.5cm*/
+    width: 25%;
+    max-width: 2.5cm;
+    height: 35%;
+    max-height: 3.5cm;
+    background-size: cover;
+}
+
+.img-holder {
+    overflow: hidden;
+}
+
+.info-holder .info-key {
+    letter-spacing: 1em;
+}
+
+#info {
+    border: 1px dotted #8cf2cb;
+}
+
+
+#author {
+    text-align: center;
+}
+
+.button-like {
+    background-image: linear-gradient(to bottom, rgba(6, 149, 82, 0.5), rgba(101, 149, 39, 0.4), rgba(6, 149, 82, 0.5));
+    border-radius: 0.2em;
+    margin: 2em 0.1em 1em 0.1em;
+    font-family: Microsoft YaHei, "微软雅黑", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    align-self: center;
+    box-shadow: 0 0 1px lightcyan;
+    padding: 1em 0;
+}
+
+.button-like:hover {
+    background-color: #005e95;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+
